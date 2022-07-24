@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B081AEB288E044C00F015C7 /* SpeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B081AEA288E044C00F015C7 /* SpeedManager.swift */; };
 		7B2E523A288B4E7C0076D0BC /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E522E288B4E7B0076D0BC /* Response.swift */; };
 		7B2E523B288B4E7C0076D0BC /* SPEED_LIMITS_FCN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E522F288B4E7B0076D0BC /* SPEED_LIMITS_FCN.swift */; };
 		7B2E523C288B4E7C0076D0BC /* Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E5230288B4E7B0076D0BC /* Attributes.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B081AEA288E044C00F015C7 /* SpeedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedManager.swift; sourceTree = "<group>"; };
 		7B2E522E288B4E7B0076D0BC /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Response.swift; path = ../../../../Downloads/codegen_62db16c0e493a/Response.swift; sourceTree = "<group>"; };
 		7B2E522F288B4E7B0076D0BC /* SPEED_LIMITS_FCN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SPEED_LIMITS_FCN.swift; path = ../../../../Downloads/codegen_62db16c0e493a/SPEED_LIMITS_FCN.swift; sourceTree = "<group>"; };
 		7B2E5230288B4E7B0076D0BC /* Attributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Attributes.swift; path = ../../../../Downloads/codegen_62db16c0e493a/Attributes.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				7B8DEE24288A464F009C2684 /* Info.plist */,
 				7B8DEE2A288A47AE009C2684 /* alarm.mp3 */,
 				7BB712BA288B495A00A39CE3 /* welcome9.swift */,
+				7B081AEA288E044C00F015C7 /* SpeedManager.swift */,
 			);
 			path = nosTicket;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B081AEB288E044C00F015C7 /* SpeedManager.swift in Sources */,
 				7B2E5245288B4E7C0076D0BC /* Link.swift in Sources */,
 				7B8DEE1B288A464D009C2684 /* ViewController.swift in Sources */,
 				7B2E5241288B4E7C0076D0BC /* Mode.swift in Sources */,
