@@ -24,6 +24,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate,SpeedManagerDe
         speedManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         locationManager.requestLocation()
+        
+        
+        
+    }
+    
+    func setupAudioPlayer() {
         let sound = Bundle.main.path(forResource: "alarm", ofType: "mp3")
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback)
@@ -35,8 +41,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate,SpeedManagerDe
         } catch let error {
             print(error.localizedDescription)
         }
-        
-        
     }
 
     @IBAction func playSoundPressed(_ sender: UIButton) {
