@@ -42,7 +42,7 @@ struct SpeedManager {
                         
                     } catch {
                         print("JSON Decoding Error")
-                        print(error)
+                        print(error.localizedDescription)
                     }
                 }
             }
