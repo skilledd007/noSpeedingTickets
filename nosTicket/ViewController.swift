@@ -16,6 +16,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate,SpeedManagerDe
     var speedManager = SpeedManager()
     
     @IBOutlet weak var speedLimitLabel: UILabel!
+    @IBOutlet weak var userSpeedLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +24,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate,SpeedManagerDe
         // Do any additional setup after loading the view.
         speedManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
-        locationManager.requestLocation()
+        locationManager.startUpdatingLocation()
+        setupAudioPlayer()
+        
+        
+    }
+    
+    func setupAudioPlayer() {
         let sound = Bundle.main.path(forResource: "alarm", ofType: "mp3")
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback)
@@ -35,8 +42,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate,SpeedManagerDe
         } catch let error {
             print(error.localizedDescription)
         }
-        
-        
     }
 
     @IBAction func playSoundPressed(_ sender: UIButton) {
@@ -63,8 +68,17 @@ class ViewController: UIViewController, CLLocationManagerDelegate,SpeedManagerDe
         
             DispatchQueue.main.async {
                 self.speedLimitLabel.text = speed
-                print(speed)
+                let speedKMH = (self.locationManager.location?.speed)! * 3.6
+                    self.userSpeedLabel.text = String(format: "%.1f", speedKMH)
+                    print(speed)
+                if(speedKMH > Double(speed)!) {
+                    self.audioPlayer.numberOfLoops = -1
+                    self.audioPlayer.play()
+                } else {
+                    self.audioPlayer.stop()
+                }
             }
+           
     }
     
 }
