@@ -17,6 +17,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate,SpeedManagerDe
     
     @IBOutlet weak var speedLimitLabel: UILabel!
     @IBOutlet weak var userSpeedLabel: UILabel!
+    @IBOutlet weak var errorMessageLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,11 +63,17 @@ class ViewController: UIViewController, CLLocationManagerDelegate,SpeedManagerDe
        
     }
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        print(error)
+        DispatchQueue.main.async {
+            self.errorMessageLabel.textColor = UIColor.purple
+            self.errorMessageLabel.text = error.localizedDescription
+        }
+        
     }
     func didUpdateSpeed(speed: String) {
         
             DispatchQueue.main.async {
+                self.errorMessageLabel.textColor = UIColor.black
+                self.errorMessageLabel.text = "No Errors"
                 self.speedLimitLabel.text = speed
                 let speedKMH = (self.locationManager.location?.speed)! * 3.6
                     self.userSpeedLabel.text = String(format: "%.1f", speedKMH)
@@ -79,6 +86,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate,SpeedManagerDe
                 }
             }
            
+    }
+    func showErrorMessage(errorMessage: String) {
+        DispatchQueue.main.async {
+            self.errorMessageLabel.textColor = UIColor.red
+            self.errorMessageLabel.text = errorMessage
+        }
     }
     
 }
