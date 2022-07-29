@@ -9,6 +9,7 @@ import Foundation
 import CoreLocation
 protocol SpeedManagerDelegate {
     func didUpdateSpeed(speed: String)
+    func showErrorMessage(errorMessage: String)
 }
 struct SpeedManager {
     var delegate: SpeedManagerDelegate?
@@ -21,8 +22,8 @@ struct SpeedManager {
             let session = URLSession(configuration: .default)
             //3. Give the session a task
             let task = session.dataTask(with: url) { (data,response,error) in
-                if error != nil {
-                    print(error)
+                if  let errorSafe = error {
+                    self.delegate?.showErrorMessage(errorMessage: errorSafe.localizedDescription)
                 }
                 /*if response != nil {
                     print(response)
@@ -42,7 +43,7 @@ struct SpeedManager {
                         
                     } catch {
                         print("JSON Decoding Error")
-                        print(error.localizedDescription)
+                        self.delegate?.showErrorMessage(errorMessage: "JSON DECODING ERROR")
                     }
                 }
             }
@@ -53,4 +54,5 @@ struct SpeedManager {
         //Need to call delegate Method.
         
     }
+    
 }
