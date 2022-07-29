@@ -63,7 +63,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate,SpeedManagerDe
        
     }
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        print(error)
+        DispatchQueue.main.async {
+            self.errorMessageLabel.textColor = UIColor.purple
+            self.errorMessageLabel.text = error.localizedDescription
+        }
+        
     }
     func didUpdateSpeed(speed: String) {
         
