@@ -98,7 +98,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate,SpeedManagerDe
                 if(Double(speed) == 0)
                 {
                     //Push Notification informing user that the speed limit is zero and that audio alerts have been stopped.
-                    
+                    self.errorMessageLabel.textColor = UIColor.orange
+                    self.errorMessageLabel.text = "SPEED LIMIT RETURNED 0. STOPPED MONITORING"
                     self.audioPlayer.stop()
                 }
                 else if(speedKMH > Double(speed)!) {
