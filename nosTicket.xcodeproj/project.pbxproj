@@ -29,6 +29,10 @@
 		7B8DEE2B288A47AE009C2684 /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B8DEE2A288A47AE009C2684 /* alarm.mp3 */; };
 		7B8DEE38288A4F13009C2684 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8DEE2D288A4CF6009C2684 /* AVFoundation.framework */; };
 		7BB712BB288B495A00A39CE3 /* welcome9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB712BA288B495A00A39CE3 /* welcome9.swift */; };
+		7BFF69B428C59F4300AF29DF /* SpeedLogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFF69B328C59F4300AF29DF /* SpeedLogsViewController.swift */; };
+		7BFF69B628C5A37F00AF29DF /* SpeedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFF69B528C5A37F00AF29DF /* SpeedEvent.swift */; };
+		7BFF69B928C5B0DE00AF29DF /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFF69B728C5B0DE00AF29DF /* CustomTableViewCell.swift */; };
+		7BFF69BA28C5B0DE00AF29DF /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BFF69B828C5B0DE00AF29DF /* CustomTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +60,10 @@
 		7B8DEE2A288A47AE009C2684 /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
 		7B8DEE2D288A4CF6009C2684 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		7BB712BA288B495A00A39CE3 /* welcome9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcome9.swift; sourceTree = "<group>"; };
+		7BFF69B328C59F4300AF29DF /* SpeedLogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedLogsViewController.swift; sourceTree = "<group>"; };
+		7BFF69B528C5A37F00AF29DF /* SpeedEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedEvent.swift; sourceTree = "<group>"; };
+		7BFF69B728C5B0DE00AF29DF /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		7BFF69B828C5B0DE00AF29DF /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +120,10 @@
 				7B8DEE2A288A47AE009C2684 /* alarm.mp3 */,
 				7BB712BA288B495A00A39CE3 /* welcome9.swift */,
 				7B081AEA288E044C00F015C7 /* SpeedManager.swift */,
+				7BFF69B328C59F4300AF29DF /* SpeedLogsViewController.swift */,
+				7BFF69B528C5A37F00AF29DF /* SpeedEvent.swift */,
+				7BFF69B728C5B0DE00AF29DF /* CustomTableViewCell.swift */,
+				7BFF69B828C5B0DE00AF29DF /* CustomTableViewCell.xib */,
 			);
 			path = nosTicket;
 			sourceTree = "<group>";
@@ -185,6 +197,7 @@
 				7B8DEE2B288A47AE009C2684 /* alarm.mp3 in Resources */,
 				7B8DEE23288A464F009C2684 /* LaunchScreen.storyboard in Resources */,
 				7B8DEE20288A464F009C2684 /* Assets.xcassets in Resources */,
+				7BFF69BA28C5B0DE00AF29DF /* CustomTableViewCell.xib in Resources */,
 				7B8DEE1E288A464D009C2684 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,11 +215,14 @@
 				7B2E5241288B4E7C0076D0BC /* Mode.swift in Sources */,
 				7BB712BB288B495A00A39CE3 /* welcome9.swift in Sources */,
 				7B2E523F288B4E7C0076D0BC /* Route.swift in Sources */,
+				7BFF69B928C5B0DE00AF29DF /* CustomTableViewCell.swift in Sources */,
 				7B2E523D288B4E7C0076D0BC /* Json4Swift_Base.swift in Sources */,
 				7B2E523C288B4E7C0076D0BC /* Attributes.swift in Sources */,
+				7BFF69B628C5A37F00AF29DF /* SpeedEvent.swift in Sources */,
 				7B8DEE17288A464D009C2684 /* AppDelegate.swift in Sources */,
 				7B2E5243288B4E7C0076D0BC /* Waypoint.swift in Sources */,
 				7B2E523A288B4E7C0076D0BC /* Response.swift in Sources */,
+				7BFF69B428C59F4300AF29DF /* SpeedLogsViewController.swift in Sources */,
 				7B2E523E288B4E7C0076D0BC /* OriginalPosition.swift in Sources */,
 				7B2E5244288B4E7C0076D0BC /* MappedPosition.swift in Sources */,
 				7B2E523B288B4E7C0076D0BC /* SPEED_LIMITS_FCN.swift in Sources */,

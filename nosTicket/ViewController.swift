@@ -118,5 +118,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate,SpeedManagerDe
         }
     }
     
+    @IBAction func viewRecentSpeedingPressed(_ sender: UIBarButtonItem) {
+        navigationController?.performSegue(withIdentifier: "toSpeedLogsViewController", sender: self)
+    }
+    
 }
 
