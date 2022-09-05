@@ -14,10 +14,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate,SpeedManagerDe
     var audioPlayer = AVAudioPlayer()
     let locationManager = CLLocationManager()
     var speedManager = SpeedManager()
-    
+    var monitoring: Bool = true
     @IBOutlet weak var speedLimitLabel: UILabel!
     @IBOutlet weak var userSpeedLabel: UILabel!
     @IBOutlet weak var errorMessageLabel: UILabel!
+    @IBOutlet weak var monitoringButtonOutlet: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,8 +46,24 @@ class ViewController: UIViewController, CLLocationManagerDelegate,SpeedManagerDe
         }
     }
 
-    @IBAction func playSoundPressed(_ sender: UIButton) {
-        audioPlayer.play()
+   
+    @IBAction func monitoringSpeedPressed(_ sender: UIButton) {
+        monitoring = !monitoring
+        if(monitoring) {
+            sender.setTitle("Stop Monitoring", for: .normal)
+            self.monitoringButtonOutlet.backgroundColor = UIColor.red
+            sender.titleLabel?.font = UIFont(name: "System", size: 5.0)
+            locationManager.startUpdatingLocation()
+            print("Started Monitoring Speed")
+        }
+        else {
+            sender.setTitle("Start Monitoring", for: .normal)
+            self.monitoringButtonOutlet.backgroundColor = UIColor.blue
+            self.monitoringButtonOutlet.titleLabel?.font = UIFont(name: "System", size: 30.0)
+            locationManager.stopUpdatingLocation()
+            print("Stopped Monitoring Speed")
+
+        }
     }
     
    
@@ -78,7 +95,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate,SpeedManagerDe
                 let speedKMH = (self.locationManager.location?.speed)! * 3.6
                     self.userSpeedLabel.text = String(format: "%.1f", speedKMH)
                     print(speed)
-                if(speedKMH > Double(speed)!) {
+                if(Double(speed) == 0)
+                {
+                    //Push Notification informing user that the speed limit is zero and that audio alerts have been stopped.
+                    self.errorMessageLabel.textColor = UIColor.orange
+                    self.errorMessageLabel.text = "SPEED LIMIT RETURNED 0. STOPPED MONITORING"
+                    self.audioPlayer.stop()
+                }
+                else if(speedKMH > Double(speed)!) {
                     self.audioPlayer.numberOfLoops = -1
                     self.audioPlayer.play()
                 } else {
