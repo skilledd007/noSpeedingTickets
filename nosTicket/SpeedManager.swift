@@ -35,7 +35,7 @@ struct SpeedManager {
                     do {
                             let responseModel = try decoder.decode(Json4Swift_Base.self, from: data!)
                         //print(responseModel.response?.route[0].leg[0].link[0].attributes.SPEED_LIMITS_FCN[0].FROM_REF_SPEED_LIMIT)
-                         let speed = responseModel.response?.route![0].leg![0].link![0].attributes?.sPEED_LIMITS_FCN![0].fROM_REF_SPEED_LIMIT
+                         let speed = responseModel.response?.route![0].leg![0].link![0].attributes?.sPEED_LIMITS_FCN![0].tO_REF_SPEED_LIMIT
                         if let speedSafe = speed {
                             print("Sending Updated Speed")
                         self.delegate?.didUpdateSpeed(speed: speedSafe)
