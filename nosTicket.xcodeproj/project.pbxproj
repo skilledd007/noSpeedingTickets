@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D2C25610B6D552BD5732FEB /* Pods_nosTicket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D41B694771DF1D4E880437C /* Pods_nosTicket.framework */; };
 		7B081AEB288E044C00F015C7 /* SpeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B081AEA288E044C00F015C7 /* SpeedManager.swift */; };
 		7B2E523A288B4E7C0076D0BC /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E522E288B4E7B0076D0BC /* Response.swift */; };
 		7B2E523B288B4E7C0076D0BC /* SPEED_LIMITS_FCN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E522F288B4E7B0076D0BC /* SPEED_LIMITS_FCN.swift */; };
@@ -33,9 +34,12 @@
 		7BFF69B628C5A37F00AF29DF /* SpeedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFF69B528C5A37F00AF29DF /* SpeedEvent.swift */; };
 		7BFF69B928C5B0DE00AF29DF /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFF69B728C5B0DE00AF29DF /* CustomTableViewCell.swift */; };
 		7BFF69BA28C5B0DE00AF29DF /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BFF69B828C5B0DE00AF29DF /* CustomTableViewCell.xib */; };
+		7BFF69BC28C7930600AF29DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BFF69BB28C7930600AF29DF /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		030365CA0DA2162B9F7CC6CD /* Pods-nosTicket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nosTicket.release.xcconfig"; path = "Target Support Files/Pods-nosTicket/Pods-nosTicket.release.xcconfig"; sourceTree = "<group>"; };
+		6D41B694771DF1D4E880437C /* Pods_nosTicket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nosTicket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B081AEA288E044C00F015C7 /* SpeedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedManager.swift; sourceTree = "<group>"; };
 		7B2E522E288B4E7B0076D0BC /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Response.swift; path = ../../../../Downloads/codegen_62db16c0e493a/Response.swift; sourceTree = "<group>"; };
 		7B2E522F288B4E7B0076D0BC /* SPEED_LIMITS_FCN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SPEED_LIMITS_FCN.swift; path = ../../../../Downloads/codegen_62db16c0e493a/SPEED_LIMITS_FCN.swift; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 		7BFF69B528C5A37F00AF29DF /* SpeedEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedEvent.swift; sourceTree = "<group>"; };
 		7BFF69B728C5B0DE00AF29DF /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		7BFF69B828C5B0DE00AF29DF /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		7BFF69BB28C7930600AF29DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FB0F9D5DFEC6D2B9323DA5E9 /* Pods-nosTicket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nosTicket.debug.xcconfig"; path = "Target Support Files/Pods-nosTicket/Pods-nosTicket.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,18 +78,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B8DEE38288A4F13009C2684 /* AVFoundation.framework in Frameworks */,
+				2D2C25610B6D552BD5732FEB /* Pods_nosTicket.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		456ED1350FAA3C9CD52133A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB0F9D5DFEC6D2B9323DA5E9 /* Pods-nosTicket.debug.xcconfig */,
+				030365CA0DA2162B9F7CC6CD /* Pods-nosTicket.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7B8DEE0A288A464D009C2684 = {
 			isa = PBXGroup;
 			children = (
 				7B8DEE15288A464D009C2684 /* nosTicket */,
 				7B8DEE14288A464D009C2684 /* Products */,
 				7B8DEE2C288A4CF6009C2684 /* Frameworks */,
+				456ED1350FAA3C9CD52133A4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +115,7 @@
 		7B8DEE15288A464D009C2684 /* nosTicket */ = {
 			isa = PBXGroup;
 			children = (
+				7BFF69BB28C7930600AF29DF /* GoogleService-Info.plist */,
 				7B2E5230288B4E7B0076D0BC /* Attributes.swift */,
 				7B2E5231288B4E7B0076D0BC /* Json4Swift_Base.swift */,
 				7B2E5236288B4E7C0076D0BC /* Leg.swift */,
@@ -132,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				7B8DEE2D288A4CF6009C2684 /* AVFoundation.framework */,
+				6D41B694771DF1D4E880437C /* Pods_nosTicket.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,9 +162,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B8DEE27288A464F009C2684 /* Build configuration list for PBXNativeTarget "nosTicket" */;
 			buildPhases = (
+				7A75998EF665B734B5C95A37 /* [CP] Check Pods Manifest.lock */,
 				7B8DEE0F288A464D009C2684 /* Sources */,
 				7B8DEE10288A464D009C2684 /* Frameworks */,
 				7B8DEE11288A464D009C2684 /* Resources */,
+				4AC3C12324421F99C6BD4192 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -199,10 +220,53 @@
 				7B8DEE20288A464F009C2684 /* Assets.xcassets in Resources */,
 				7BFF69BA28C5B0DE00AF29DF /* CustomTableViewCell.xib in Resources */,
 				7B8DEE1E288A464D009C2684 /* Main.storyboard in Resources */,
+				7BFF69BC28C7930600AF29DF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4AC3C12324421F99C6BD4192 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-nosTicket/Pods-nosTicket-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-nosTicket/Pods-nosTicket-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-nosTicket/Pods-nosTicket-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A75998EF665B734B5C95A37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-nosTicket-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7B8DEE0F288A464D009C2684 /* Sources */ = {
@@ -370,6 +434,7 @@
 		};
 		7B8DEE28288A464F009C2684 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB0F9D5DFEC6D2B9323DA5E9 /* Pods-nosTicket.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -383,6 +448,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -398,6 +464,7 @@
 		};
 		7B8DEE29288A464F009C2684 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 030365CA0DA2162B9F7CC6CD /* Pods-nosTicket.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -411,6 +478,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

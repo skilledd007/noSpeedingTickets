@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseCore
+import FirebaseFirestore
 
 class SpeedLogsViewController: UIViewController,UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
@@ -13,14 +15,37 @@ class SpeedLogsViewController: UIViewController,UITableViewDataSource {
         SpeedEvent(location: "16 Ave", speed: "180KPH"),
         SpeedEvent(location: "Stoney Trail ", speed: "220KPH")
     ]
+    let db = Firestore.firestore()
     override func viewDidLoad() {
         super.viewDidLoad()
+        speedEvents.removeAll()
+        loadEventsFromFireStore()
         tableView.dataSource = self
         self.registerTableViewCells()
+        
         // Do any additional setup after loading the view.
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print("Getting Row Count for table")
         return speedEvents.count
+    }
+    func loadEventsFromFireStore() {
+        db.collection("speedingEvents").getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    print("\(document.documentID) => \(document.data())")
+                    for data in document.data() {
+                        let speedEvent = SpeedEvent(location: data.key, speed: data.value as! String)
+                        print("speedEvent location: \(speedEvent.location)")
+                        print("speedEvent speed: \(speedEvent.speed)")
+                        self.speedEvents.append(speedEvent)
+                    }
+                }
+                self.tableView.reloadData()
+            }
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
