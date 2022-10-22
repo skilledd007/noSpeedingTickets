@@ -8,18 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7B081AEB288E044C00F015C7 /* SpeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B081AEA288E044C00F015C7 /* SpeedManager.swift */; };
-		7B2E523A288B4E7C0076D0BC /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E522E288B4E7B0076D0BC /* Response.swift */; };
-		7B2E523B288B4E7C0076D0BC /* SPEED_LIMITS_FCN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E522F288B4E7B0076D0BC /* SPEED_LIMITS_FCN.swift */; };
-		7B2E523C288B4E7C0076D0BC /* Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E5230288B4E7B0076D0BC /* Attributes.swift */; };
-		7B2E523D288B4E7C0076D0BC /* Json4Swift_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E5231288B4E7B0076D0BC /* Json4Swift_Base.swift */; };
-		7B2E523E288B4E7C0076D0BC /* OriginalPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E5232288B4E7B0076D0BC /* OriginalPosition.swift */; };
-		7B2E523F288B4E7C0076D0BC /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E5233288B4E7B0076D0BC /* Route.swift */; };
-		7B2E5240288B4E7C0076D0BC /* Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E5234288B4E7C0076D0BC /* Summary.swift */; };
-		7B2E5241288B4E7C0076D0BC /* Mode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E5235288B4E7C0076D0BC /* Mode.swift */; };
-		7B2E5242288B4E7C0076D0BC /* Leg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E5236288B4E7C0076D0BC /* Leg.swift */; };
-		7B2E5243288B4E7C0076D0BC /* Waypoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E5237288B4E7C0076D0BC /* Waypoint.swift */; };
-		7B2E5244288B4E7C0076D0BC /* MappedPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E5238288B4E7C0076D0BC /* MappedPosition.swift */; };
-		7B2E5245288B4E7C0076D0BC /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E5239288B4E7C0076D0BC /* Link.swift */; };
 		7B8DEE17288A464D009C2684 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DEE16288A464D009C2684 /* AppDelegate.swift */; };
 		7B8DEE19288A464D009C2684 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DEE18288A464D009C2684 /* SceneDelegate.swift */; };
 		7B8DEE1B288A464D009C2684 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DEE1A288A464D009C2684 /* ViewController.swift */; };
@@ -32,19 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7B081AEA288E044C00F015C7 /* SpeedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedManager.swift; sourceTree = "<group>"; };
-		7B2E522E288B4E7B0076D0BC /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Response.swift; path = ../../../../Downloads/codegen_62db16c0e493a/Response.swift; sourceTree = "<group>"; };
-		7B2E522F288B4E7B0076D0BC /* SPEED_LIMITS_FCN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SPEED_LIMITS_FCN.swift; path = ../../../../Downloads/codegen_62db16c0e493a/SPEED_LIMITS_FCN.swift; sourceTree = "<group>"; };
-		7B2E5230288B4E7B0076D0BC /* Attributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Attributes.swift; path = ../../../../Downloads/codegen_62db16c0e493a/Attributes.swift; sourceTree = "<group>"; };
-		7B2E5231288B4E7B0076D0BC /* Json4Swift_Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Json4Swift_Base.swift; path = ../../../../Downloads/codegen_62db16c0e493a/Json4Swift_Base.swift; sourceTree = "<group>"; };
-		7B2E5232288B4E7B0076D0BC /* OriginalPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OriginalPosition.swift; path = ../../../../Downloads/codegen_62db16c0e493a/OriginalPosition.swift; sourceTree = "<group>"; };
-		7B2E5233288B4E7B0076D0BC /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Route.swift; path = ../../../../Downloads/codegen_62db16c0e493a/Route.swift; sourceTree = "<group>"; };
-		7B2E5234288B4E7C0076D0BC /* Summary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Summary.swift; path = ../../../../Downloads/codegen_62db16c0e493a/Summary.swift; sourceTree = "<group>"; };
-		7B2E5235288B4E7C0076D0BC /* Mode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Mode.swift; path = ../../../../Downloads/codegen_62db16c0e493a/Mode.swift; sourceTree = "<group>"; };
-		7B2E5236288B4E7C0076D0BC /* Leg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Leg.swift; path = ../../../../Downloads/codegen_62db16c0e493a/Leg.swift; sourceTree = "<group>"; };
-		7B2E5237288B4E7C0076D0BC /* Waypoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Waypoint.swift; path = ../../../../Downloads/codegen_62db16c0e493a/Waypoint.swift; sourceTree = "<group>"; };
-		7B2E5238288B4E7C0076D0BC /* MappedPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MappedPosition.swift; path = ../../../../Downloads/codegen_62db16c0e493a/MappedPosition.swift; sourceTree = "<group>"; };
-		7B2E5239288B4E7C0076D0BC /* Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Link.swift; path = ../../../../Downloads/codegen_62db16c0e493a/Link.swift; sourceTree = "<group>"; };
+		7B081AEA288E044C00F015C7 /* SpeedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SpeedManager.swift; path = /Users/amritmahendrarajah/Documents/Portfolio_Projects/noSpeedingTickets/nosTicket/SpeedManager.swift; sourceTree = "<absolute>"; };
 		7B8DEE13288A464D009C2684 /* nosTicket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nosTicket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B8DEE16288A464D009C2684 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B8DEE18288A464D009C2684 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,18 +66,6 @@
 		7B8DEE15288A464D009C2684 /* nosTicket */ = {
 			isa = PBXGroup;
 			children = (
-				7B2E5230288B4E7B0076D0BC /* Attributes.swift */,
-				7B2E5231288B4E7B0076D0BC /* Json4Swift_Base.swift */,
-				7B2E5236288B4E7C0076D0BC /* Leg.swift */,
-				7B2E5239288B4E7C0076D0BC /* Link.swift */,
-				7B2E5238288B4E7C0076D0BC /* MappedPosition.swift */,
-				7B2E5235288B4E7C0076D0BC /* Mode.swift */,
-				7B2E5232288B4E7B0076D0BC /* OriginalPosition.swift */,
-				7B2E522E288B4E7B0076D0BC /* Response.swift */,
-				7B2E5233288B4E7B0076D0BC /* Route.swift */,
-				7B2E522F288B4E7B0076D0BC /* SPEED_LIMITS_FCN.swift */,
-				7B2E5234288B4E7C0076D0BC /* Summary.swift */,
-				7B2E5237288B4E7C0076D0BC /* Waypoint.swift */,
 				7B8DEE16288A464D009C2684 /* AppDelegate.swift */,
 				7B8DEE18288A464D009C2684 /* SceneDelegate.swift */,
 				7B8DEE1A288A464D009C2684 /* ViewController.swift */,
@@ -197,21 +161,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B081AEB288E044C00F015C7 /* SpeedManager.swift in Sources */,
-				7B2E5245288B4E7C0076D0BC /* Link.swift in Sources */,
 				7B8DEE1B288A464D009C2684 /* ViewController.swift in Sources */,
-				7B2E5241288B4E7C0076D0BC /* Mode.swift in Sources */,
 				7BB712BB288B495A00A39CE3 /* welcome9.swift in Sources */,
-				7B2E523F288B4E7C0076D0BC /* Route.swift in Sources */,
-				7B2E523D288B4E7C0076D0BC /* Json4Swift_Base.swift in Sources */,
-				7B2E523C288B4E7C0076D0BC /* Attributes.swift in Sources */,
 				7B8DEE17288A464D009C2684 /* AppDelegate.swift in Sources */,
-				7B2E5243288B4E7C0076D0BC /* Waypoint.swift in Sources */,
-				7B2E523A288B4E7C0076D0BC /* Response.swift in Sources */,
-				7B2E523E288B4E7C0076D0BC /* OriginalPosition.swift in Sources */,
-				7B2E5244288B4E7C0076D0BC /* MappedPosition.swift in Sources */,
-				7B2E523B288B4E7C0076D0BC /* SPEED_LIMITS_FCN.swift in Sources */,
-				7B2E5240288B4E7C0076D0BC /* Summary.swift in Sources */,
-				7B2E5242288B4E7C0076D0BC /* Leg.swift in Sources */,
 				7B8DEE19288A464D009C2684 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

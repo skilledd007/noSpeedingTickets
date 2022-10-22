@@ -33,13 +33,12 @@ struct SpeedManager {
                 if let safeData = data {
                     let decoder = JSONDecoder()
                     do {
-                            let responseModel = try decoder.decode(Json4Swift_Base.self, from: data!)
+                            //let responseModel = try decoder.decode(Json4Swift_Base.self, from: data!)
+                        let welcome9 = try? decoder.decode(responseModel.self, from: safeData)
                         //print(responseModel.response?.route[0].leg[0].link[0].attributes.SPEED_LIMITS_FCN[0].FROM_REF_SPEED_LIMIT)
-                         let speed = responseModel.response?.route![0].leg![0].link![0].attributes?.sPEED_LIMITS_FCN![0].tO_REF_SPEED_LIMIT
-                        if let speedSafe = speed {
-                            print("Sending Updated Speed")
-                        self.delegate?.didUpdateSpeed(speed: speedSafe)
-                        }
+                        let speed = welcome9?.response.route[0].leg[0].link[0].attributes.speedLimitsFcn[0].toRefSpeedLimit
+                            print("Sending Updated Speed \(speed)")
+                        self.delegate?.didUpdateSpeed(speed: speed!)
                         
                     } catch {
                         print("JSON Decoding Error")
